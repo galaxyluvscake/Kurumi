@@ -42,9 +42,9 @@ module.exports = {
         Atlas.sendMessage(m.from, { image: pic, caption: txt }, { quoted: m });
         break;
 
-      case: "hi"
-      case: "hello"
-      case: "alive"
+      case "hi":
+      case "hello":
+      case "alive":
         await doReact: ("🧣");
     start: async(Atlas, m,{pushName,prefix}) => {
         const pad = (s) => (s < 10 ? "0" : "") + s;
@@ -68,7 +68,7 @@ module.exports = {
         Atlas.sendMessage(m.from, { image: pic, caption: txt3 }, { quoted: m });
         break;
 
-      case: "rank"
+      case "rank":
         await doReact("✅");
         const canvacord=require('canvacord')
 const {fetchBuffer}=require("../../lib/Function")

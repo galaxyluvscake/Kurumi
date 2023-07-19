@@ -2,6 +2,9 @@ const fs = require("fs");
 const axios = require("axios");
 const path = require("path");
 let mergedCommands = [
+  "hi",
+  "hello",
+  "alive",
   "help",
   "h",
   "menu",
@@ -37,6 +40,24 @@ module.exports = {
         }\n\n❝ Dont forget to give a Star ⭐ to the repo. It's made with restless hardwork by *Team ATLAS*. ❞\n\n*©️ Team ATLAS- 2023*`;
         Atlas.sendMessage(m.from, { image: pic, caption: txt }, { quoted: m });
         break;
+
+      case: "hi"
+      case: "hello"
+      case: "alive"
+        await doReact: ("🧣");
+    start: async(Miku, m,{pushName,prefix}) => {
+        const pad = (s) => (s < 10 ? "0" : "") + s;
+        const formatTime = (seconds) => {
+        const hours = Math.floor(seconds / (60 * 60));
+        const minutes = Math.floor((seconds % (60 * 60)) / 60);
+        const secs = Math.floor(seconds % 60);
+        return time = `${pad(hours)}:${pad(minutes)}:${pad(secs)}`;
+        };
+        const uptime = () => formatTime(process.uptime());
+        await Miku.sendMessage(m.from,{image:{url:botImage1},caption:`\nKonichiwa *${pushName}* senpai, I am *${botName}* bot. type *${prefix}help* to get my full command list.\n\n_🧩 Server Uptime:_ *${uptime()}*\n_🎀 Status:_ *Operational*\n`},{quoted:m})
+    }
+}
+
 
       case "support":
       case "supportgc":
@@ -106,7 +127,7 @@ module.exports = {
         );
 
         break;
-      default:
+        default:
         break;
     }
   },

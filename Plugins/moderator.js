@@ -160,7 +160,7 @@ module.exports = {
         }
         break;
 
-      case: "setchar"
+      case "setchar":
         
         await doReact("🎀");
         start: async (Atlas, m, { text, prefix ,modStatus}) => {

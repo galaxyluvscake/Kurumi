@@ -45,7 +45,7 @@ module.exports = {
       case "hi":
       case "hello":
       case "alive":
-        await doReact: ("🧣");
+        await doReact("🧣");
     start: async(Atlas, m,{pushName,prefix}) => {
         const pad = (s) => (s < 10 ? "0" : "") + s;
         const formatTime = (seconds) => {

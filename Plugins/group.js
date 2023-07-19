@@ -400,15 +400,15 @@ module.exports = {
         }
         await doReact("👋");
         await Atlas.sendMessage(m.from, {
-          image: { url: "https://wallpapercave.com/wp/wp9667218.png" },
-          caption: `I'm Leaving this group on request... \n\nTake care everyone :)`,
+          image: { url: "https://wallpapercave.com/wp/wp10093049.jpg" },
+          caption: `Tchai moi j'ai pull up hein... \n\nVotre babiere à vous tous`,
           mentions: participants.map((a) => a.id),
           quoted: m,
         }).then(async () => {
           Atlas.groupLeave(m.from).catch((e) => {
             Atlas.sendMessage(
               m.from,
-              { text: `An error Occurd !` },
+              { text: `*_An error Occured !_*` },
               { quoted: m }
             );
           });

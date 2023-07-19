@@ -65,8 +65,8 @@ module.exports = {
           await doReact("🔖");
           let mediaMess = await quoted.download();
           let stickerMess = new Sticker(mediaMess, {
-            pack: packname,
-            author: pushName,
+            pack: "meme",
+            author: "nigger",
             type: StickerTypes.FULL,
             categories: ["🤩", "🎉"],
             id: "12345",
@@ -87,8 +87,8 @@ module.exports = {
             );
           }
           let stickerMess = new Sticker(mediaMess, {
-            pack: packname,
-            author: pushName,
+            pack: "meme",
+            author: "nigger",
             type: StickerTypes.FULL,
             categories: ["🤩", "🎉"],
             id: "12345",
@@ -109,15 +109,15 @@ module.exports = {
       case "take":
         if (!m.quoted) {
           await doReact("❔");
-          return m.reply(`Please meantion a sticker to steal it.`);
+          return m.reply(`Please mention a sticker to steal it.`);
         }
         await doReact("🀄️");
         if (!args.join(" ")) {
-          var packName = pushName;
-          var authorName = pushName;
-        } else if (args.join(" ").includes(",")) {
-          var packName = args.join(" ").split(",")[0];
-          var authorName = args.join(" ").split(",")[1];
+          var packName = "meme";
+          var authorName = "nigger";
+        } else if (args.join(" ").includes("|")) {
+          var packName = args.join(" ").split("|")[0];
+          var authorName = args.join(" ").split("|")[1];
         } else {
           var packName = args.join(" ");
           var authorName = args.join(" ");
@@ -125,7 +125,7 @@ module.exports = {
         if (/webp/.test(mime)) {
           let mediaMess = await quoted.download();
           let stickerMess = new Sticker(mediaMess, {
-            pack: packName,
+            pack: "meme",
             author: authorName,
             type: StickerTypes.FULL,
             categories: ["🤩", "🎉"],
@@ -138,7 +138,7 @@ module.exports = {
         } else {
           await doReact("❌");
           m.reply(
-            `Please mention a *Sticker* and type *${prefix}steal <packname , authorname>* to create sticker with your name.`
+            `Please mention a *Sticker* and type *${prefix}steal <packnam , vauthorname>* to create sticker with your name.`
           );
         }
 
@@ -150,8 +150,8 @@ module.exports = {
           await doReact("🃏");
           let mediaMess = await quoted.download();
           let stickerMess = new Sticker(mediaMess, {
-            pack: packname,
-            author: pushName,
+            pack: "meme",
+            author: "nigger",
             type: StickerTypes.CROPPED,
             categories: ["🤩", "🎉"],
             id: "12345",
@@ -168,8 +168,8 @@ module.exports = {
             return m.reply("Please send video less than 15 seconds.");
           }
           let stickerMess = new Sticker(mediaMess, {
-            pack: packname,
-            author: pushName,
+            pack: "meme",
+            author: "nigger",
             type: StickerTypes.CROPPED,
             categories: ["🤩", "🎉"],
             id: "12345",
@@ -201,8 +201,8 @@ module.exports = {
           meme = `https://api.memegen.link/images/custom/-/${text}.png?background=${mem}`;
 
           let stickerMess = new Sticker(meme, {
-            pack: packname,
-            author: pushName,
+            pack: "meme",
+            author: "nigger",
             type: StickerTypes.FULL,
             categories: ["🤩", "🎉"],
             id: "12345",
@@ -248,7 +248,7 @@ module.exports = {
           }
         }
         await doReact("📮");
-        var waUserName = pushName;
+        var waUserName = "nigger";
 
         const quoteText = m.quoted ? m.quoted.msg : args ? args.join(" ") : "";
 
@@ -291,8 +291,8 @@ module.exports = {
         );
 
         let stickerMess = new Sticker("quote.png", {
-          pack: packname,
-          author: pushName,
+          pack: "meme",
+          author: "nigger",
           type: StickerTypes.FULL,
           categories: ["🤩", "🎉"],
           id: "12345",
@@ -339,8 +339,8 @@ module.exports = {
         fs.writeFileSync("emoji.png", stcBuff);
 
         let stickerMess2 = new Sticker("emoji.png", {
-          pack: packname,
-          author: pushName,
+          pack: "meme",
+          author: "nigger",
           type: StickerTypes.FULL,
           categories: ["🤩", "🎉"],
           id: "12345",

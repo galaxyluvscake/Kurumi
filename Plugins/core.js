@@ -54,7 +54,7 @@ module.exports = {
         return time = `${pad(hours)}:${pad(minutes)}:${pad(secs)}`;
         };
         const uptime = () => formatTime(process.uptime());
-        let txt2 = `\nKonichiwa *${pushName}* senpai, I am *${botName}* bot. type *${prefix}help* to get my full command list.\n\n_🧩 Server Uptime:_ *${uptime()}*\n_🎀 Status:_ *Operational*\n`
+        let txt2 = `\nKonichiwa *${pushName}* senpai, I am *${botName}* bot. Type *${prefix}help* to get my full command list.\n\n_🧩 Server Uptime:_ *${uptime()}*\n_🎀 Status:_ *Operational*\n`
         Atlas.sendMessage(m.from, { image: {url:botImage1}, caption: txt2 }, { quoted: m });
         }
         break;
@@ -120,7 +120,7 @@ module.exports = {
 
         const allCommands = readUniqueCommands(pluginsDir);
         const formattedCommands = formatCommands(allCommands);
-        var helpText = `\nKonnichiwa *${pushName}* Senpai,\n\nI am *${botName}*, a WhatsApp bot built to take your boring WhatsApp experience into next level.\n\n*🔖 My Prefix is:*  ${prefix}\n\n${formattedCommands}\n\n\n*©️ Team ATLAS- 2023*`;
+        var helpText = `\nKonnichiwa *${pushName}* Senpai,\n\nI am *${botName}*.\n\n*🔖 My Prefix is:*  ${prefix}\n\n${formattedCommands}\n\n\n*©️ Team ATLAS- 2023*`;
         await Atlas.sendMessage(
           m.from,
           { video: { url: botVideo }, gifPlayback: true, caption: helpText },

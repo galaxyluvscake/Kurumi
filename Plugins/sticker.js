@@ -138,7 +138,7 @@ module.exports = {
         } else {
           await doReact("❌");
           m.reply(
-            `Please mention a *Sticker* and type *${prefix}steal <packnam , vauthorname>* to create sticker with your name.`
+            `Please mention a *Sticker* and type *${prefix}steal <packname , authorname>* to create sticker with your name.`
           );
         }
 

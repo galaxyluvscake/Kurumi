@@ -288,4 +288,15 @@ global.charID19 = {
   botImage4 : "https://images6.alphacoders.com/126/1260043.png",
   botImage5 : "https://images6.alphacoders.com/124/1247977.jpg",
   botImage6 : "https://images2.alphacoders.com/125/1251795.jpg",
+}${uptime()}
+
+global.charID20 = {
+  botName : "Yang Kai",
+  botVideo : "https://drive.google.com/file/d/1On1ukwCc4sDVLsD1QYoiGAmx0jlt5BQf/view?usp=sharing",
+  botImage1 : "https://wallpapercave.com/dwp1x/wp10093060.png",
+  botImage2 : "https://static.wikia.nocookie.net/martial-peak-mp/images/f/fe/Images.jpeg/revision/latest/scale-to-width-down/1000?cb=20230715005836",
+  botImage3 : "https://static.wikia.nocookie.net/martial-peak-mp/images/f/ff/Su_Yan_and_Yang_Kai.jpg/revision/latest?cb=20180621132507",
+  botImage4 : "https://wallpapercave.com/dwp1x/wp10093060.png",
+  botImage5 : "https://static.wikia.nocookie.net/martial-peak-mp/images/2/2d/YK_Barbarian.png/revision/latest?cb=20220226234513",
+  botImage6 : "https://i.pinimg.com/564x/8d/53/b2/8d53b27ec058950a586230d31d07b089.jpg",
 }
